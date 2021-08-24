@@ -32,6 +32,12 @@ public class EventController {
         return "Test successful!!!";
     }
 
+    @GetMapping("/gustavo")
+    public String test() {
+        // GET http://localhost:8080/event/gustavo
+        return "Oi Gustavo!";
+    }
+
     // Retrieve All
     @GetMapping(produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.TEXT_XML_VALUE})
     public List<Event> listAll() {
