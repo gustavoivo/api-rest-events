@@ -33,7 +33,7 @@ public class EventController {
     }
 
     @GetMapping("/gustavo")
-    public String test() {
+    public String gustavo() {
         // GET http://localhost:8080/event/gustavo
         return "Oi Gustavo!";
     }
