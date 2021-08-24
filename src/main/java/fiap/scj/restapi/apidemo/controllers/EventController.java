@@ -38,6 +38,12 @@ public class EventController {
         return "Oi Gustavo!";
     }
 
+    @GetMapping("/ola")
+    public String ola() {
+        // GET http://localhost:8080/event/ola
+        return "Ola gente";
+    }
+
     // Retrieve All
     @GetMapping(produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.TEXT_XML_VALUE})
     public List<Event> listAll() {
